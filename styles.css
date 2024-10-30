@@ -1,0 +1,116 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css');
+
+body {
+  background-color: #f7fafc;
+  font-family: 'Sans', sans-serif;
+}
+
+header {
+    background-color: transparent; /* 배경색 제거 */
+    color: inherit; /* 텍스트 색상 기본값으로 */
+  }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a:hover {
+  color: #a0aec0;
+}
+
+.section {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-button {
+    background-color: #3b82f6; /* bg-blue-500 */
+    color: white;
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border-radius: 0.25rem; /* rounded */
+}
+
+.common-class {
+  background-color: #e2e8f0; /* bg-gray-200 */
+  transition: background-color 0.2s; /* transition-colors duration-200 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1rem; /* p-4 */
+}
+
+.common-class:hover {
+  background-color: #cbd5e0; /* hover:bg-gray-300 */
+}
+
+.header-title {
+    /* 스타일을 기본값으로 설정 */
+    background-color: transparent;
+    color: #000; /* 텍스트 색상 */
+    font-size: 1.5rem; /* 텍스트 크기 줄이기 */
+    font-weight: 600; /* 폰트를 조금 더 두껍게 */
+    margin-bottom: 0.3rem; /* 하단 마진 추가 */
+    /* 필요에 따라 다른 스타일도 추가 */
+  }
+
+
+  .header-title.common-class {
+    background-color: transparent;
+    color: #000; /* 텍스트 색상 */
+  }
+
+  .header-link.common-class {
+    /* 스타일을 기본값으로 설정 */
+    background-color: transparent;
+    color: #000; /* 텍스트 색상 */
+    font-size: 0.9rem; /* 텍스트 크기 줄이기 */
+    font-weight: 600; /* 폰트를 조금 더 두껍게 */
+    /* 필요에 따라 다른 스타일도 추가 */
+  }
+
+.header-link:hover {
+  color: #525356; /* hover:text-gray-400 */
+}
+
+.main-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold;   /* font-bold */
+    margin: 5rem 0; /* 상단 및 하단 마진을 늘려 영역 상하 키우기 */
+    text-align: center; /* center 정렬 */
+}
+
+h2 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: bold; /* font-bold */
+}
+
+.common-h3 {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500; /* font-medium */
+    margin-bottom: 0.5rem; /* mb-2 */
+  }
+
+.common-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.common-section {
+  background-color: white; /* bg-white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1.5rem; /* p-6 */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+
