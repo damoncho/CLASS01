@@ -1,17 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('section').forEach(section => {
-        const listCount = section.querySelectorAll('.list-container a').length;
-        const listCountSpan = section.querySelector('.list-count');
-        if (listCountSpan) listCountSpan.textContent = `(${listCount})`;
-    });
+  document.querySelectorAll('section').forEach(section => {
+    const listCount = section.querySelectorAll('.list-container a').length;
+    const listCountSpan = section.querySelector('.list-count');
 
-    document.querySelectorAll('.toggle-button').forEach(button => {
-        button.addEventListener('click', () => {
-            const listContainer = button.parentElement.nextElementSibling;
-            listContainer.classList.toggle('hidden');
-            button.textContent = listContainer.classList.contains('hidden') ? '펼치기' : '접기';
-        });
-    });
+    if (listCountSpan) {
+      listCountSpan.textContent = `(${listCount})`;
+    }
+  });
 
-    document.querySelectorAll('a').forEach(element => element.classList.add('common-class'));
+  document.querySelectorAll('.toggle-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const listContainer = button.parentElement.nextElementSibling;
+      listContainer.classList.toggle('hidden');
+
+      if (listContainer.classList.contains('hidden')) {
+        button.textContent = '펼치기';
+      } else {
+        button.textContent = '접기';
+      }
+    });
+  });
+
+  document.querySelectorAll('a').forEach(element => {
+    element.classList.add('common-class');
+  });
 });
+
+function toggleSection(element) {
+  const button = element.nextElementSibling;
+
+  if (button) {
+    button.click();
+  }
+}
