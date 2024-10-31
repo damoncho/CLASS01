@@ -64,7 +64,7 @@ header {
 
 h2 {
   font-size: 1.25rem; /* text-xl */
-  font-weight: bold; /* font-bold */
+  font-weight: 600; /* 폰트를 조금 더 두껍게 */
 }
 
 .common-h3 {
