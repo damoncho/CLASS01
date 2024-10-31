@@ -55,11 +55,27 @@ header {
   padding: 0 1rem;
 }
 
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* 세로로 정렬 */
+  text-align: center;
+}
+
 .page-title {
   font-size: 1.875rem; /* text-3xl */
   font-weight: bold;   /* font-bold */
-  margin: 5rem 0; /* 상단 및 하단 마진을 늘려 영역 상하 키우기 */
+  margin: 5rem 0 1.5rem; /* 상단 및 하단 마진을 조정하여 간격 좁히기 */
   text-align: center; /* center 정렬 */
+}
+
+.page-image {
+  max-width: 100%; /* 이미지 크기 조정 */
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  border-radius: 0.5rem; /* rounded-lg */
+  margin-bottom: 5rem; /* mb-6 */
 }
 
 h2 {
