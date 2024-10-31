@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document.querySelectorAll('a:not(.header-title):not(.header-nav)').forEach(element => {
+  document.querySelectorAll('a:not(.header-title):not(.header-nav):not(.title-container a)').forEach(element => {
     element.classList.add('card-class');
   });
 });
