@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>데이먼의 PM 일지</title>
@@ -16,38 +17,30 @@
   <meta property="og:url" content="https://damon.im/">
   <meta name="twitter:title" content="데이먼의 PM 일지">
   <meta name="twitter:description" content="프로젝트 관리 및 기획에 대한 통찰과 클래스 정보 제공">
-  
+
 </head>
-<body class="bg-gray-100 font-sans">
-  <header class="bg-white text-white py-4">
-    <div class="container mx-auto flex justify-start items-center">
-      <div class="header-title-container">
-        <a href="https://damon.im/" class="header-title mr-0">데이먼의 PM 일지</a>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div>
+        <a href="https://damon.im/" class="header-title">데이먼의 PM 일지</a>
       </div>
       <div class="nav-container">
         <nav>
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; gap: 0.1rem;">
-            <li><a href="https://damon.im/" class="header-link">홈</a></li>
-            <li><a href="https://damon.im/tag/job-notes/" class="header-link">직무노트</a></li>
-            <li><a href="https://damon.im/tag/pkm/" class="header-link">생산성</a></li>
-            <li><a href="https://damon.im/tag/work-notes/" class="header-link">업무노트</a></li>
-            <li><a href="https://damon.im/tag/book-notes/" class="header-link">독서노트</a></li>
-            <li><a href="https://damon.im/tag/personal-notes/" class="header-link">개인노트</a></li>
-            <li><a href="https://damoncho.github.io/class01/" class="header-link">PM/기획 클래스</a></li>
-            <li><a href="https://damon.im/pkm-class/" class="header-link">옵시디언 클래스</a></li>
-            <li><a href="https://damon.im/about/" class="header-link">소개</a></li>
-          </ul>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="https://damon.im/" class="header-nav">블로그</a></li>
         </nav>
       </div>
-    </div>
   </header>
 
   <div class="container mx-auto py-8">
-    <h1 class="main-title">'제품 관리자'와 '기획자'를 위한 실전 노하우!</h1>
+    <h1 class="page-title">'제품 관리자'와 '기획자'를 위한 실전 노하우!</h1>
 
     <!-- 제품 관리자 업무 구분 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">제품 관리자 업무 구분 (PO, PM, 기획자) <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -80,8 +73,8 @@
     </section>
 
     <!-- 제품 관리 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">제품 관리 <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -114,8 +107,8 @@
     </section>
 
     <!-- 그로스해킹 뽀개기 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">그로스해킹 뽀개기 <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -130,8 +123,8 @@
     </section>
 
     <!-- 기획자 인사이트 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">기획자 인사이트  <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -152,8 +145,8 @@
     </section>
 
     <!-- 서비스 기획 실무 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">서비스 기획 실무  <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -195,8 +188,8 @@
     </section>
 
     <!-- 케이스 스터디 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">케이스 스터디  <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -214,8 +207,8 @@
     </section>
 
     <!-- 스타트업 인사이트 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">스타트업 인사이트  <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -236,8 +229,8 @@
     </section>
 
     <!-- 비즈니스 분석 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">비즈니스 분석  <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -264,8 +257,8 @@
     </section>
 
     <!-- 서비스 심층 분석 - 트리플 섹션 -->
-    <section class="common-section toggle-section">
-      <div class="common-flex">
+    <section class="section toggle-section">
+      <div class="section-space">
         <h2 onclick="toggleSection(this)">서비스 심층 분석 - 트리플  <span class="list-count"></span></h2>
         <button class="toggle-button">펼치기</button>
       </div>
@@ -289,8 +282,8 @@
     </section>
 
     <!-- 비개발자를 위한 IT 직무 총정리! -->
-    <section class="common-section toggle-section">
-        <div class="common-flex">
+    <section class="section toggle-section">
+        <div class="section-space">
           <h2 onclick="toggleSection(this)">비개발자를 위한 IT 직무 총정리! <span class="list-count"></span></h2>
           <button class="toggle-button">펼치기</button>
         </div>
