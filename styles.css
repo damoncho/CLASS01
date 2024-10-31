@@ -1,14 +1,53 @@
 @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css');
 
 body {
-  background-color: #f7fafc;
-  font-family: 'Sans', sans-serif;
+  background-color: #F3F4F6; /* 기존 bg-gray-100 */
+  font-family: 'Sans', sans-serif; /* 기존 font-sans */
 }
 
 header {
-    background-color: transparent; /* 배경색 제거 */
-    color: inherit; /* 텍스트 색상 기본값으로 */
-  }
+  background-color: white; /* 기존 bg-white */
+  color: black; /* 기존 text-black */
+  padding-top: 1rem; /* 기존 py-4 */
+  padding-bottom: 1rem; /* 기존 py-4 */
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex; /* flex 추가 */
+  align-items: flex-end; /* 기존 items-center */
+}
+
+.header-title {
+  font-size: 1.5rem; /* 텍스트 크기 줄이기 */
+  font-weight: 600; /* 폰트를 조금 더 두껍게 */
+  margin-bottom: 0.3rem; /* 하단 마진 추가 */
+}
+
+.header-nav {
+  font-size: 1rem; /* 텍스트 크기 줄이기 */
+  font-weight: 600; /* 폰트를 조금 더 두껍게 */
+}
+
+.header-nav:hover {
+  color: #525356; /* hover:text-gray-400 */
+}
+
+.nav-container {
+  margin-left: auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
 
 .container {
   max-width: 1200px;
@@ -16,75 +55,11 @@ header {
   padding: 0 1rem;
 }
 
-nav ul {
-  display: flex;
-  gap: 1rem;
-}
-
-nav a:hover {
-  color: #a0aec0;
-}
-
-.section {
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.toggle-button {
-    background-color: #3b82f6; /* bg-blue-500 */
-    color: white;
-    padding: 0.5rem 1rem; /* px-4 py-2 */
-    border-radius: 0.25rem; /* rounded */
-}
-
-.common-class {
-  background-color: #e2e8f0; /* bg-gray-200 */
-  transition: background-color 0.2s; /* transition-colors duration-200 */
-  border-radius: 0.5rem; /* rounded-lg */
-  padding: 1rem; /* p-4 */
-}
-
-.common-class:hover {
-  background-color: #cbd5e0; /* hover:bg-gray-300 */
-}
-
-.header-title {
-    /* 스타일을 기본값으로 설정 */
-    background-color: transparent;
-    color: #000; /* 텍스트 색상 */
-    font-size: 1.5rem; /* 텍스트 크기 줄이기 */
-    font-weight: 600; /* 폰트를 조금 더 두껍게 */
-    margin-bottom: 0.3rem; /* 하단 마진 추가 */
-    /* 필요에 따라 다른 스타일도 추가 */
-  }
-
-
-  .header-title.common-class {
-    background-color: transparent;
-    color: #000; /* 텍스트 색상 */
-  }
-
-  .header-link.common-class {
-    /* 스타일을 기본값으로 설정 */
-    background-color: transparent;
-    color: #000; /* 텍스트 색상 */
-    font-size: 0.9rem; /* 텍스트 크기 줄이기 */
-    font-weight: 600; /* 폰트를 조금 더 두껍게 */
-    /* 필요에 따라 다른 스타일도 추가 */
-  }
-
-.header-link:hover {
-  color: #525356; /* hover:text-gray-400 */
-}
-
-.main-title {
-    font-size: 1.875rem; /* text-3xl */
-    font-weight: bold;   /* font-bold */
-    margin: 5rem 0; /* 상단 및 하단 마진을 늘려 영역 상하 키우기 */
-    text-align: center; /* center 정렬 */
+.page-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;   /* font-bold */
+  margin: 5rem 0; /* 상단 및 하단 마진을 늘려 영역 상하 키우기 */
+  text-align: center; /* center 정렬 */
 }
 
 h2 {
@@ -93,19 +68,11 @@ h2 {
 }
 
 .common-h3 {
-    font-size: 1.125rem; /* text-lg */
-    font-weight: 500; /* font-medium */
-    margin-bottom: 0.5rem; /* mb-2 */
-  }
-
-.common-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem; /* mb-4 */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
 }
 
-.common-section {
+.section {
   background-color: white; /* bg-white */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
   border-radius: 0.5rem; /* rounded-lg */
@@ -113,37 +80,59 @@ h2 {
   margin-bottom: 1.5rem; /* mb-6 */
 }
 
-/* ... 기존 스타일 ... */
+.section-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem; /* mt-4 */
+  margin-bottom: 0.5rem; /* mb-4 */
+}
 
+.toggle-button {
+  background-color: #3b82f6; /* bg-blue-500 */
+  color: white;
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.25rem; /* rounded */
+}
+
+.card-class {
+  background-color: #e2e8f0; /* bg-gray-200 */
+  transition: background-color 0.2s; /* transition-colors duration-200 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1rem; /* p-4 */
+}
+
+.card-class:hover {
+  background-color: #cbd5e0; /* hover:bg-gray-300 */
+}
+
+/*
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: row; /* 가로로 나열 */
-    justify-content: flex-start; /* 왼쪽 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-    gap: 0.1rem; /* 간격 조정 */
-    flex-wrap: wrap; /* 개행을 위해 wrap 추가 */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .container {
-    flex-direction: column; /* 세로로 나열 */
-    align-items: flex-start; /* 왼쪽 정렬 */
+  .header-title {
+    order: -1;
+    margin-bottom: 1rem; 
   }
 
   .nav-container {
-    margin-top: 1rem; /* 위쪽 마진 추가 */
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
-
-  .header-link {
-    font-size: 0.9rem; /* 글자 크기 조정 */
-    padding: 0.3rem 0; /* 패딩 추가 */
-  }
-
-  .toggle-button {
-    font-size: 0.8rem; /* 글자 크기 조정 */
-    padding: 0.4rem 0.8rem; /* 패딩 조정 */
-  }
-
-  .common-class {
-    padding: 0.8rem; /* 패딩 조정 */
-  }
+*/
