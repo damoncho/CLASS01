@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document.querySelectorAll('a').forEach(element => {
-    element.classList.add('common-class');
+  document.querySelectorAll('a:not(.header-title):not(.header-nav)').forEach(element => {
+    element.classList.add('card-class');
   });
 });
 
